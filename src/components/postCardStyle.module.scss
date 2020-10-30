@@ -1,0 +1,39 @@
+.title {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  max-width: 176px;
+}
+.title:hover {
+  color: rgb(75, 75, 75);
+  text-decoration: none;
+}
+.date {
+  display: block;
+  font-size: 0.75rem;
+}
+.description {
+  font-style: italic;
+  margin: 5px 0 0 0;
+  max-width: 200px;
+}
+.contentBox {
+  margin-bottom: 40px;
+}
+.image {
+  width: 25%;
+  min-width: 93px;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.titleAndImageBox {
+  display: flex;
+  align-items: center;
+}

@@ -5,24 +5,47 @@ const Header = props => {
   return (
     <div className={hStyles.header}>
       <nav className={hStyles.nav}>
-        <h3 className={hStyles.title}>
+        <h4 className={hStyles.title}>
           <Link className={hStyles.titleLink} to="/">
-            Tyler Knapp
+            Tyler <br className={hStyles.hideOnCollapse} />
+            Knapp
           </Link>
-        </h3>
+        </h4>
         <ul className={hStyles.navList}>
           <li className={hStyles.navListItem}>
-            <Link className={hStyles.link} to="/posts">
+            <Link
+              className={hStyles.link}
+              to="/posts"
+              activeClassName={hStyles.activeLink}
+            >
               Posts
             </Link>
           </li>
+          {/* <li className={hStyles.navListItem}>
+            <Link
+              className={hStyles.link}
+              to="/projects"
+              activeClassName={hStyles.activeLink}
+            >
+              Projects
+            </Link>
+          </li> */}
           <li className={hStyles.navListItem}>
-            <Link className={hStyles.link} to="/music">
+            <Link
+              className={hStyles.link}
+              to="/music"
+              activeClassName={hStyles.activeLink}
+            >
               Music
             </Link>
           </li>
+          {/* Link to contact page? or include contact info in footer? both? */}
           <li className={hStyles.navListItem}>
-            <Link className={hStyles.link} to="/contact">
+            <Link
+              className={hStyles.link}
+              to="/contact"
+              activeClassName={hStyles.activeLink}
+            >
               Contact
             </Link>
           </li>

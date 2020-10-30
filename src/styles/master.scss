@@ -1,6 +1,9 @@
 html {
   font-family: Montserrat;
 }
+p {
+  font-size: 14px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -9,8 +12,20 @@ ul {
   padding: 0;
 }
 a {
-  color: #666666;
+  color: #710088;
   text-decoration: none;
+}
+a:hover {
+  color: #550166;
+  text-decoration: underline;
+}
+code {
+  color: black;
+  font-weight: bold;
+  font-size: 0.75rem;
+  background-color: rgb(212, 212, 212);
+  padding: 4px;
+  border-radius: 10%;
 }
 .d-flex {
   display: flex;
@@ -18,8 +33,14 @@ a {
 .flex-align-center {
   align-items: center;
 }
+.flex-justify-center {
+  justify-content: center;
+}
 .flex-align-base {
   align-items: baseline;
+}
+.flex-align-top {
+  align-items: flex-start;
 }
 .flex-dir-col {
   flex-direction: column;
@@ -27,10 +48,8 @@ a {
 .flex-row-collapse {
   flex-direction: row;
 }
-@media (max-width: 620px) {
-  .flex-row-collapse {
-    flex-direction: column;
-  }
+.justify-content-between {
+  justify-content: space-between;
 }
 .bigText {
   font-size: 3rem;
@@ -41,8 +60,16 @@ a {
   padding: 0 40px;
 }
 .largeImage {
-  width: 65%;
+  width: 50%;
   max-width: 400px;
   min-width: 250px;
   margin-right: 40px;
+}
+@media (max-width: 620px) {
+  .flex-row-collapse {
+    flex-direction: column;
+  }
+  .largeImage {
+    margin: 0 auto 10px auto;
+  }
 }

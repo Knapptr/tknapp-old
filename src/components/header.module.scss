@@ -1,11 +1,20 @@
+.title {
+  font-weight: 600;
+}
+
 .titleLink {
+  color: black;
+  text-decoration: none;
+}
+.titleLink:hover {
   color: black;
   text-decoration: none;
 }
 .header {
   display: flex;
-  margin-bottom: 40px;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
+  width: 100%;
+  max-width: 1000px;
 }
 .nav {
   display: flex;
@@ -24,15 +33,27 @@
 }
 .link:hover {
   color: black;
+  text-decoration: none;
+}
+.activeLink {
+  color: black;
+  font-weight: 600;
 }
 @media (max-width: 400px) {
   .title {
     text-align: center;
+    margin: 10px 0 5px 0;
   }
   .header {
     justify-content: center;
   }
   .nav {
     flex-direction: column;
+  }
+  .navList {
+    margin: 0;
+  }
+  .hideOnCollapse {
+    display: none;
   }
 }

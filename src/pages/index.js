@@ -17,15 +17,23 @@ const IndexPage = () => (
           <p>
             I enjoy working with javascript, node, express and react. This site
             was built while learning gatsby. You can see my code on{" "}
-            <a href="">github.</a>
+            <a href="https://github.com/knapptr" target="__blank">
+              github.
+            </a>
           </p>
           <p>
-            I make ambient music as <a href="">cone</a>. I sometimes put
-            together mixes you can find on <a href="">soundcloud.</a>
+            I make ambient music as{" "}
+            <a href="https://conephl.bandcamp.com/" target="__blank">
+              cone
+            </a>{" "}
+            and make other types of sounds on{" "}
+            <a href="https://soundcloud.com/knappt" target="__blank">
+              soundcloud.
+            </a>
           </p>
           <p>
-            I love exploring on my bicycle. I've worked as a mechanic, a coach,
-            and have raced road, cx and xc.
+            I love exploring on my bicycle. I've been a mechanic, a coach, and
+            bike racer.
           </p>
         </div>
       </div>
