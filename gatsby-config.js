@@ -1,16 +1,46 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Tyler Knapp`,
+    description: `The personal webpage for Tyler Knapp`,
+    author: `Tyler Knapp`,
   },
+  pathPrefix: "/tknapp",
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              showCaptions: true,
+              markdownCaptions: true,
+              maxWidth: 600,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "music",
+        path: `${__dirname}/src/music`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -34,12 +64,13 @@ module.exports = {
         fonts: [
           {
             family: "Montserrat",
-            variants: ["100", "400", "800"],
+            variants: ["100", "200", "400", "600", "800"],
             formats: ["ttf", "woff"],
           },
         ],
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
