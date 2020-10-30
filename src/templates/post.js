@@ -15,7 +15,10 @@ const PostTemplate = ({ data }) => {
           <blockquote className={postStyle.description}>
             {post.frontmatter.description}
           </blockquote>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div
+            className={"d-flex flex-dir-col flex-justify-center"}
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
         </div>
       </div>
       <div className="d-flex flex-justify-center">

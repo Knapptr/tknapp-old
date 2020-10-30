@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import PostCard from "../components/PostCard"
+
 const PostPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
   return (
@@ -15,7 +16,7 @@ const PostPage = ({ data }) => {
 }
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: { frontmatter: { location: { eq: "posts" } } }) {
       edges {
         node {
           id
