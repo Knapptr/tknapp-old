@@ -1,0 +1,38 @@
+.titleLink {
+  color: black;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  margin-bottom: 40px;
+  margin: 0 0 40px 0;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: 0 40px;
+}
+.navList {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.navListItem {
+  margin-right: 15px;
+}
+.link:hover {
+  color: black;
+}
+@media (max-width: 400px) {
+  .title {
+    text-align: center;
+  }
+  .header {
+    justify-content: center;
+  }
+  .nav {
+    flex-direction: column;
+  }
+}
