@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import postCardStyle from "./postCardStyle.module.scss"
 
 const PostCard = ({ post }) => {
+  console.log(post.frontmatter.image.publicURL)
   return (
     <div className={postCardStyle.borderBox}>
       <div className={postCardStyle.contentBox}>

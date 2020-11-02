@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import tkHalloween from "../../public/static/TKhalloweenkid.jpg"
+import tkHalloween from "../images/TKhalloweenkid.jpg"
 const IndexPage = () => (
   <Layout>
     <div>

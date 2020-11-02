@@ -31,12 +31,15 @@
 .navListItem {
   margin-right: 15px;
 }
+.link {
+  font-weight: 400;
+}
 .link:hover {
   color: black;
   text-decoration: none;
 }
 .activeLink {
-  color: black;
+  color: rgb(124, 5, 124);
   font-weight: 600;
 }
 @media (max-width: 400px) {

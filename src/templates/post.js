@@ -22,7 +22,10 @@ const PostTemplate = ({ data }) => {
         </div>
       </div>
       <div className="d-flex flex-justify-center">
-        <Link to="/posts" className={postStyle.bottomLink}>
+        <Link
+          to={`/${post.frontmatter.location}`}
+          className={postStyle.bottomLink}
+        >
           Go Back
         </Link>
       </div>
@@ -37,6 +40,7 @@ export const query = graphql`
         title
         description
         date
+        location
       }
     }
   }

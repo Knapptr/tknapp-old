@@ -30,6 +30,7 @@ export const pageQuery = graphql`
             description
             image {
               publicURL
+              relativePath
               name
             }
           }
