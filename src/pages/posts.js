@@ -4,7 +4,12 @@ import { graphql } from "gatsby"
 import PostCard from "../components/PostCard"
 
 const PostPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges
+  let posts = data.allMarkdownRemark.edges
+  posts = posts.sort((a, b) => {
+    let c = new Date(a.node.frontmatter.date)
+    let d = new Date(b.node.frontmatter.date)
+    return d - c
+  })
   return (
     <Layout>
       {posts.map(post => {

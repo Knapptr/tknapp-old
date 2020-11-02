@@ -7,9 +7,9 @@ const PostTemplate = ({ data }) => {
   return (
     <Layout>
       <div className={`${postStyle.fullPost}`}>
+        <date className={postStyle.date}>{post.frontmatter.date}</date>
         <div className={`${postStyle.header} `}>
-          <h1>{post.frontmatter.title}</h1>
-          <date>{post.frontmatter.date}</date>
+          <h1 className={postStyle.header}>{post.frontmatter.title}</h1>
         </div>
         <div className={postStyle.postContent}>
           <blockquote className={postStyle.description}>
