@@ -1,6 +1,6 @@
 ---
 title: Sequencing with Orca
-date: 10/29/20
+date: 2020-10-29
 description: MIDI sequencing with an 'esoteric programming language.'
 image: ./orca.hello.png
 location: music

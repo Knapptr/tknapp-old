@@ -1,7 +1,7 @@
 ---
 title: 2 New things I learned in vim.
 description: Number incrementing and cursor placement in search results.
-date: 11/02/20
+date: 2020-11-02
 image: ./images/ibmKeys.jpg
 location: posts
 ---
@@ -10,7 +10,7 @@ It might be my inner New Englander, but I _love_ a difficult thing. I've been le
 to use [Vim](<https://en.wikipedia.org/wiki/Vim_(text_editor)>) for the last 4 months. ~~I'm
 not sure its actually made me any faster at writing code.~~ It has NOT made me any
 faster at writing code, but it has changed the way I think about editing code. I still
-mostly work in Vscode, but use the [Vscode](https://github.com/VSCodeVim/Vim) extension.
+mostly work in Vscode, but use the [VscodeVim](https://github.com/VSCodeVim/Vim) extension.
 
 Here are the two things I learned today, while working on a lyrics guessing game
 inspired by the brothers over at [MBMBAM](https://www.themcelroy.family/mbmbam).

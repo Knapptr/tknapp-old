@@ -1,6 +1,6 @@
 ---
 title: Working with Gatsby
-date: 10/30/20
+date: 2020-10-30
 description: Learning to use a new framework built on the power of react.
 image: ./images/Gatsby-Monogram.svg
 location: posts
