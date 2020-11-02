@@ -4,7 +4,7 @@ module.exports = {
     description: `The personal webpage for Tyler Knapp`,
     author: `Tyler Knapp`,
   },
-  pathPrefix: "/tknapp",
+  pathPrefix: `/tknapp`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
